@@ -34,7 +34,7 @@
     <?php
 
     //otsing
-    if (isset($_GET["s"])){
+    if (!empty($_GET["s"])){
         $s = $_GET["s"];
         $paring = ' SELECT album, hind FROM albumid WHERE album LIKE "%' .$s. '%"';
     } else {
