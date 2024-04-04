@@ -29,8 +29,8 @@
     <form action="#" method="get">
     artist <input type="text" name="artist"><br>
     album <input type="text" name="album"><br>
-    aasta <input type="text" name="aasta" min="1900"><br>
-    hind <input type="text" name="hind" step="0.01"><br>
+    aasta <input type="number" name="aasta" min="1900"><br>
+    hind <input type="number" name="hind" step="0.01"><br>
     <input type="submit" value=" + Lisa uus" name="Lisa">
 </form>
 
@@ -101,6 +101,8 @@
         <p class="card-text">'.$rida['hind'].'€</p>
         <a href="#" class="btn btn-danger">Osta</a>
         <a href="index.php?del=kustuta&id='.$rida['id'].'" class="btn btn-warning">Kustuta</a>
+
+        <a href="edit.php?id='.$rida['id'].'" class="btn btn-primary">Uuenda</a>
       </div>
       </div>
     </div>
